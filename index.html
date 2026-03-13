@@ -50,6 +50,10 @@
 
             max-width: 300px;
 
+            max-height: 90vh;
+
+            overflow-y: auto;
+
         }
 
         h2 {
@@ -240,6 +244,7 @@
         <button id="randomize">Randomize Parameters</button>
 
         <button id="changeClimate">Change Climate</button>
+        
         
 
         
@@ -934,7 +939,7 @@
 
             });
 
-            document.getElementById("changeClimate").onclick = () => {
+            document.getElementById("changeClimate").addEventListener('click', () => {
             
                 climate = (climate + 1) % 3;
             
